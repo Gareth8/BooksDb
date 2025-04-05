@@ -1,11 +1,11 @@
 CREATE TABLE authors (
     author_ID SERIAL PRIMARY KEY,
-    author_name varchar (255)
+    author_name varchar (60)
 );
 
 CREATE TABLE publishers (
     publisher_ID SERIAL PRIMARY KEY,
-    publisher_name varchar (255)
+    publisher_name varchar (60)
 );
 
 CREATE TABLE books (
