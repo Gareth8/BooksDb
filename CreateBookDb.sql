@@ -1,15 +1,15 @@
 CREATE TABLE authors (
-    author_ID INT PRIMARY KEY,
+    author_ID SERIAL PRIMARY KEY,
     author_name varchar (255)
 );
 
 CREATE TABLE publishers (
-    publisher_ID INT PRIMARY KEY,
+    publisher_ID SERIAL PRIMARY KEY,
     publisher_name varchar (255)
 );
 
 CREATE TABLE books (
-    book_ID INT PRIMARY KEY,
+    book_ID SERIAL PRIMARY KEY,
     title varchar (100) not null,
     author_ID INT,
     publisher_ID INT,
