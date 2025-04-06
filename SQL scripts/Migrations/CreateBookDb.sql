@@ -26,8 +26,12 @@ CREATE TABLE IF NOT EXISTS author_book_link (
     author_ID INT,
     CONSTRAINT fk_book
         FOREIGN KEY (book_ID)
-            REFERENCES books(book_ID),
+            REFERENCES books(book_ID)
+                ON DELETE CASCADE
+                ON UPDATE CASCADE,
     CONSTRAINT fk_author
         FOREIGN KEY (author_ID)
             REFERENCES authors(author_ID)
+                ON DELETE CASCADE
+                ON UPDATE CASCADE
 );
