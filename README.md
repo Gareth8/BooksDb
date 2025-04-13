@@ -1,3 +1,5 @@
+![Rust Workflow](https://github.com/Gareth8/BooksDb/actions/workflows/rust.yml/badge.svg)
+
 # BooksDb
 This project was created to provide myself with an easy way to check what books I own when I am not at home.
 
